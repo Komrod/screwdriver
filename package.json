@@ -1,0 +1,32 @@
+{
+  "name": "screwdriver",
+  "version": "0.1.0",
+  "description": "Node toolkit",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "deasync": "^0.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Komrod/screwdriver.git"
+  },
+  "keywords": [
+    "screwdriver",
+    "toolkit",
+    "node",
+    "toolkit"
+  ],
+  "author": "Komrod <komrod@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Komrod/screwdriver/issues"
+  },
+  "homepage": "https://github.com/Komrod/screwdriver#readme"
+}
