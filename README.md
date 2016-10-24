@@ -2,7 +2,7 @@
 
 A toolkit adding very helpfull functions to your node scripts.
 
-There is some functions missing in Javascript and node scripts, like checking if a file exists or trimming a string, manipulating HTML colors and easily check the type of a value. Screwdriver provides the
+There is some functions missing in Javascript and node scripts, like checking if a file exists or trimming a string, manipulating HTML colors and easily check the type of a value.
 
 
 ## MATH
