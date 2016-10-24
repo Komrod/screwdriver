@@ -1,15 +1,8 @@
 
-var sd = require('./lib/screwdriver.js');
+var sd = require('./index.js');
 
 
-/*
-
-var result = sd.mkdirpSync('testSync');
-console.log('result = '+result);
-*/
-
-sd.mkdirp('test/test2/test3/test4', '0777', function(success) {
-	console.log('mkdirp: success='+success);
-});
-
+//console.log('Mkdirp: success = '+sd.mkdirpSync('test/test2/test3/test4', '0777'));
+//console.log('Float: '+sd.randFloat(0,10));
+//console.log('Integer: '+sd.randInt(0,10));
 
