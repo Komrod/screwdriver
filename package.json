@@ -1,14 +1,9 @@
 {
   "name": "screwdriver",
   "version": "0.1.0",
-  "description": "Node toolkit",
+  "description": "Node toolkit adding some helpful functions: files, array, string, color, math ...",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {
-    "deasync": "^0.1.8"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,8 +15,33 @@
   "keywords": [
     "screwdriver",
     "toolkit",
-    "node",
-    "toolkit"
+    "node toolkit",
+    "math functions",
+    "file functions",
+    "string functions",
+    "array functions",
+    "color functions",
+    "mkdir",
+    "mkdirp",
+    "mkdirpSync",
+    "isBoolean",
+    "isInt",
+    "isFunction",
+    "isObject",
+    "isString",
+    "isArray",
+    "isDefined",
+    "isUndefined",
+    "unique",
+    "randFloat",
+    "randInt",
+    "fileExists",
+    "dirExists",
+    "trim",
+    "contains",
+    "quickSort",
+    "hexToRgb",
+    "rgbToHex"
   ],
   "author": "Komrod <komrod@hotmail.com>",
   "license": "MIT",
