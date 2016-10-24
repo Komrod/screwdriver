@@ -56,7 +56,7 @@ Returns true if the path exists and is a directory
 Returns true if the value is an integer
 
 ### isArray (value)
-Returns true if the value is an integer
+Returns true if the value is an array
 
 ### isBoolean (value)
 Returns true if the value is a boolean
