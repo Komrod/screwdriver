@@ -1,6 +1,8 @@
-# screwdriver
+# Screwdriver
 
 A toolkit adding very helpfull functions to your node scripts.
+
+There is some functions missing in Javascript and node scripts, like checking if a file exists or trimming a string, manipulating HTML colors and easily check the type of a value. Screwdriver provides the
 
 
 ## MATH
@@ -80,10 +82,10 @@ Returns true if the value is a function
 Returns true if the value is an object
 
 ### isHex (value)
-Returns true if the value is a hexadecimal color (#FFFFFF)
+Returns true if the value is a hexadecimal HTML color (#FFFFFF)
 
 ### isHexShort (value)
-Returns true if the value is a short hexadecimal color (#FFF)
+Returns true if the value is a short hexadecimal HTML color (#FFF)
 
 
 ## STRING
