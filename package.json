@@ -1,6 +1,6 @@
 {
-  "name": "screwdriver",
-  "version": "0.1.0",
+  "name": "node-screwdriver",
+  "version": "0.1.1",
   "description": "Node toolkit adding some helpful functions: files, array, string, color, math ...",
   "main": "index.js",
   "dependencies": {},
@@ -40,6 +40,7 @@
     "dirExists",
     "trim",
     "contains",
+    "endsWith",
     "quickSort",
     "hexToRgb",
     "rgbToHex"
