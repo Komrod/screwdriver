@@ -110,6 +110,10 @@ Return trimmed string and replace multiple space characters with a single space 
 ### contains (str, search)
 Returns true if the search is contained in str
 
+### endsWith (str, search)
+Returns true if the search is at the end of str
+
+
 ## VECTOR
 
 ### degreeToRadian (d)
