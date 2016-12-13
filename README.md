@@ -4,6 +4,11 @@ A toolkit adding very helpfull functions to your node scripts.
 
 There is some functions missing in Javascript and node scripts, like checking if a file exists or trimming a string, manipulating HTML colors and easily check the type of a value.
 
+Example in a node js script :
+```
+	var sd = require('node-screwdriver');
+	console.log('Show extension: '+sd.getExtension('myImage.png'));
+```
 
 ## MATH
 
