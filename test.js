@@ -6,4 +6,5 @@ var sd = require('./index.js');
 //console.log('Float: '+sd.randFloat(0,10));
 //console.log('Integer: '+sd.randInt(0,10));
 //console.log('Ends with: '+sd.endsWith('aze.png', 'png'));
+//console.log('DatTime: '+sd.getDateTime());
 

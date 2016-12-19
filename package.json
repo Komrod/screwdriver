@@ -1,6 +1,6 @@
 {
   "name": "node-screwdriver",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Node toolkit adding some helpful functions: files, array, string, color, math ...",
   "main": "index.js",
   "dependencies": {},
@@ -22,6 +22,7 @@
     "string functions",
     "array functions",
     "color functions",
+    "time functions",
     "mkdir",
     "mkdirp",
     "mkdirpSync",

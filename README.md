@@ -30,6 +30,12 @@ Returns true if value is in the array
 Execute a function for each element of an array
 
 
+## TIME
+
+### getDateTime ()
+Get the date and time with the format "Y-m-d H:i:s"
+
+
 ## FILE
 
 ### getExtension (path)
