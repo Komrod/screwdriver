@@ -119,6 +119,9 @@ Returns true if the search is contained in str
 ### endsWith (str, search)
 Returns true if the search is at the end of str
 
+### startsWith (str, search, position)
+Returns true if str begins with search, optional starts at position
+
 
 ## VECTOR
 
