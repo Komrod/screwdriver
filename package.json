@@ -1,12 +1,17 @@
 {
   "name": "node-screwdriver",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Node toolkit adding some helpful functions: files, array, string, color, math ...",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "deasync": "^0.1.9"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -42,6 +47,7 @@
     "trim",
     "contains",
     "endsWith",
+    "startsWith",
     "quickSort",
     "hexToRgb",
     "rgbToHex"
