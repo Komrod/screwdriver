@@ -12,7 +12,7 @@ Example in a node js script :
 
 ## Polyfill
 
-You can use the function polyfill to add methods to the javascript objects and prototypes so it's more easy to use.
+You can use the function polyfill() to add methods to the javascript objects and prototypes so it's more easy to use.
 
 Added to all instances of the String objects:
 - getExtension
@@ -53,6 +53,7 @@ Added to Object:
 - isBoolean
 - isRegexp
 - isString
+- isObject
 
 
 ```
@@ -60,6 +61,9 @@ Added to Object:
 	console.log('Random int: '+Math.randInt(0, 100));
 	console.log('PI is float: '+Object.isFloat(3,14159));
 ```
+
+You can also use the methods without polyfill.
+
 
 ## MATH
 
@@ -197,4 +201,11 @@ Converts RGB object {r,g,b} to hexadecimal HTML color (#FFFFFF)
 ### normalizeHex (str)
 Converts short hexadecimal HTML color (#FFF) to full hexadecimal HTML color (#FFFFFF) if needed
 
+
+## Changelog
+
+### V0.1.4
+- Polyfill function
+- Fix small bugs
+- Add type functions to Object
 
