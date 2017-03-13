@@ -30,6 +30,7 @@ Added to all instances of the String objects:
 - contains
 - endWith
 - startsWith
+- ucFirst
 
 Added to all instances of the Array objects:
 - quickSort
@@ -177,6 +178,9 @@ Returns true if the search is at the end of str
 ### startsWith (str, search, position)
 Returns true if str begins with search, optional starts at position
 
+### ucFirst (str)
+Returns the string with the first character in upper case
+
 
 ## VECTOR
 
@@ -203,6 +207,9 @@ Converts short hexadecimal HTML color (#FFF) to full hexadecimal HTML color (#FF
 
 
 ## Changelog
+
+### v0.1.5
+- ucFirst function
 
 ### V0.1.4
 - Polyfill function

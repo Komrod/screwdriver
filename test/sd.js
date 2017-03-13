@@ -89,6 +89,13 @@ describe("Screwdriver", function() {
 	    	expect(result).to.be.equal('png');
 		});
 	});
+  	describe("String functions", function() {
+	  	it("Returns first char in upper case", function() {
+	   		var result = sd.ucFirst('somebody once Told me');
+	    	expect(result).to.be.a('string');
+	    	expect(result).to.be.equal('Somebody once Told me');
+		});
+	});
   	describe("Array unique", function() {
 	  	it("returns array integer", function() {
 	   		var result = sd.unique([1,2,3,4,1,1,1,1,1,1,1,1,1,1,2,3,4]);
@@ -159,6 +166,12 @@ describe("Screwdriver", function() {
 	   		var result = str.getNoExtension();
 	    	expect(result).to.be.a('string');
 	    	expect(result).to.be.equal('iamgroot');
+		});
+	  	it("returns string ucFirst from polyfill", function() {
+	  		var str = 'somebody once Told Me';
+	   		var result = str.ucFirst();
+	    	expect(result).to.be.a('string');
+	    	expect(result).to.be.equal('Somebody once Told Me');
 		});
 	  	it("returns boolean fileExists from polyfill", function() {
 	   		var result = __filename.fileExists();
