@@ -127,9 +127,11 @@ Execute a function for each element of an array
 
 ## TIME
 
-### getDateTime ()
-Get the date and time with the format "Y-m-d H:i:s"
+### getDateTime (time)
+Get the date and time with the format "Y-m-d H:i:s". Optional time is aimed timestamp in ms
 
+### now (time)
+Get the time now (timestamp in ms) or time relative to now. Ex: sd.now(24*60*60) is now + 1 day
 
 ## FILE
 
