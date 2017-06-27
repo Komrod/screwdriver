@@ -1,6 +1,6 @@
 {
   "name": "node-screwdriver",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Node toolkit adding some helpful functions: files, array, string, color, math ...",
   "main": "index.js",
   "dependencies": {
@@ -45,6 +45,7 @@
     "fileExists",
     "dirExists",
     "trim",
+    "ucfirst",
     "contains",
     "endsWith",
     "startsWith",

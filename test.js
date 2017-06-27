@@ -1,19 +1,9 @@
 
 
 var sd = require('./index.js');
-var expect = require("chai").expect;
 
 
-describe("Random number", function() {
-  	describe("Random float 0,100", function() {
-	    it("returns max 100", function() {
+console.log(sd.getDateTime(new Date().getTime() - 10*24*60*60*1000));
 
-	    });
-	    it("returns min 0", function() {
+console.log(sd.touch('test.txt'));
 
-	    });
-	    it("returns float", function() {
-
-		});
-	});
-});
