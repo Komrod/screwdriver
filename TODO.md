@@ -7,6 +7,8 @@
 
 ## DONE
 
-- polyfill
-- fix endsWith
+- touch file
+- ~~add time parameter to getDateTime~~
+- ~~polyfill~~
+- ~~fix endsWith~~
 

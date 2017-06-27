@@ -2,12 +2,36 @@
 
 A toolkit adding very helpfull functions to your node scripts.
 
-There is some functions missing in Javascript and node scripts, like checking if a file exists or trimming a string, manipulating HTML colors and easily check the type of a value.
+There is some functions missing in Javascript and node scripts, like checking if a file exists or trimming a string, manipulating HTML colors and easily check the type of a variable. 
 
 Example in a node js script :
 ```
+	// without polyfill
+
+	// Set the sd variable
 	var sd = require('node-screwdriver');
-	console.log('Show extension: '+sd.getExtension('myImage.png'));
+
+	// set path as a string
+	var path = './test/myImage.png';
+
+	// use the sd methods
+	console.log('Show extension: '+sd.getExtension(path));
+	console.log('Show dir: '+sd.getDir(path));
+
+	
+	// with polyfill
+	require('node-screwdriver').polyfill();
+	
+	// path is still a string but now we can use path.fileExists()
+	if (path.fileExists()) {
+		console.log('The file alrady exists');
+	} else {
+		if (path.touch()) {
+			console.log('File created);
+		} else {
+			console.log('Could not create the file');
+		}
+	}
 ```
 
 ## Polyfill
@@ -20,6 +44,7 @@ Added to all instances of the String objects:
 - getFilename
 - getDir
 - fileExists
+- touch
 - dirExists
 - isHex
 - isHexShort
@@ -40,11 +65,17 @@ Added to all instances of the Array objects:
 	var str = '/path/to/file/myImage.png';
 	console.log('Extension: '+str.getExtension());
 	console.log('Is a file: '+str.fileExists());
+	console.log('File name starts with "~": '+str.getFilename().startsWith('~'));
 ```
 
 Added to Math object:
 - randFloat
 - randInt
+
+```
+	require('node-screwdriver').polyfill();
+	var randomX = Math.randInt(0, 100);
+```
 
 Added to Object:
 - isInt
@@ -56,15 +87,23 @@ Added to Object:
 - isString
 - isObject
 
-
 ```
 	require('node-screwdriver').polyfill();
-	console.log('Random int: '+Math.randInt(0, 100));
-	console.log('PI is float: '+Object.isFloat(3,14159));
+	var str = 'My string';
+	console.log('Is float: '+Object.isFloat(str);
+	console.log('Is boolean: '+Object.isBoolean(str);
+	console.log('Is string: '+Object.isString(str);
 ```
 
 You can also use the methods without polyfill.
 
+```
+	var sd = require('node-screwdriver');
+	var path = './MyDir/';
+	if (!path.dirExists()) {
+		path.mkdirp();
+	}
+```
 
 ## MATH
 
@@ -207,6 +246,10 @@ Converts short hexadecimal HTML color (#FFF) to full hexadecimal HTML color (#FF
 
 
 ## Changelog
+
+### v0.1.6
+- Add parameter to getDateTime to change date
+- Touch file
 
 ### v0.1.5
 - ucFirst function

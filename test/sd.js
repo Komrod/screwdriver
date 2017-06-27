@@ -140,6 +140,13 @@ describe("Screwdriver", function() {
 	    	expect(result).to.be.true;
 		});
 	});
+  	describe("String from getDateTime", function() {
+	  	it("returns date not now", function() {
+	   		var resultNow = sd.getDateTime();
+			var resultNotNow =  sd.getDateTime(new Date().getTime() - 10*24*60*60*1000);
+	    	expect(resultNow).not.to.be.equal(resultNotNow);
+		});
+	});
   	describe("Polyfill", function() {
   		sd.polyfill();
 
