@@ -7,6 +7,7 @@
 
 ## DONE
 
+- ~~now~~
 - ~~touch file~~
 - ~~add time parameter to getDateTime~~
 - ~~polyfill~~
